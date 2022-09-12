@@ -500,24 +500,27 @@
           color: #fff;
           background-image: linear-gradient(to right, #00dbde 0%, #c0c0aa 100%);
           transition: ease-in;
-          background-image: url("/assets/images/important.jpg");
+          background-image: url("/assets/images/a_pic.png ");
         }
   
         .selection_card:nth-child(2){
           background: #c0c0aa;  /* fallback for old browsers */
           background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
           background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: url("/assets/images/d_pic.png ");
         }
   
         .selection_card:nth-child(3){
           background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
           transition: ease-in;
+          background-image: url("/assets/images/b_pic.png ");
         }
   
         .selection_card:nth-child(4){
           background: #ff00cc;  /* fallback for old browsers */
           background: -webkit-linear-gradient(to left #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
           background: linear-gradient(to left, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: url("/assets/images/c_pic.png ");
         }
           
       
@@ -536,7 +539,7 @@
           background-image: linear-gradient(to right, #df4e61 0%, #c0c0aa 100%);
           transition: ease-in;
           animation: slideMenu .7s ease-in;
-          background-image: url("/assets/images/important.jpg");
+          background-image: url("/assets/images/a_pic.png ");
         }
         
         .selection_card.active:nth-child(2){
@@ -544,12 +547,14 @@
             background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             animation: slideMenu .9s ease-in;
+            background-image: url("/assets/images/d_pic.png ");
         }
         
         .selection_card.active:nth-child(3){
             background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
             transition: ease-in;
             animation: slideMenu 1.3s ease-in;
+            background-image: url("/assets/images/b_pic.png ");
         }
         
         .selection_card.active:nth-child(4){
@@ -557,6 +562,7 @@
             background: -webkit-linear-gradient(to left #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to left, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             animation: slideMenu 1.7s ease-in;
+            background-image: url("/assets/images/c_pic.png ");
         }
           
         .selection_card h2 {
