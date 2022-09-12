@@ -1,6 +1,6 @@
-Welcome the Carom website.
+Welcome the official website for Carom Air!
 
-Developed by @wegma
+Website Developed by @wegma
 
 
 Bare with me as bugs are being fixed! Thank you!!!
