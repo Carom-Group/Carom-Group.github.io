@@ -4,9 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Website</title>
+    <title>Carom Second Site</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/1bf875bbb8.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Wegma</h1>
-</body>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="#home" id="navbar_logo">CAROM AIR</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="navbar_links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#about" class="navbar_links" id="about-page">Ambitions</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#tools" class="navbar_links" id="tools-page">Tools</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="assets/minihmtl/segmentselector.html" class="button" id="signup">Segment Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--      Grabber Visuals     -->
+        <div class="iscroller"></div>
+
+
+        <!--    Main Title Section   -->
+        <div class="hero" id="home">
+            <div class="hero_container">
+                <h1 class="hero_heading">Intelligent traffic monitoring using <span>Neural Networks.</span></h1>
+
+                <p class="hero_description">Advanced analysis and incident detection</p>
+                <button class="main_btn"><a href="#">Explore</a></button>
+            </div>
+        </div>
+
+        <!--    About Section   -->
+        <div class="main" id="about">
+            <div class="main_container">
+              <div class="main_img--container">
+
+                <div class="main_img--card">
+
+                    <div class="main_img--back ">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <div class="main_img--fore">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="main_content">
+                <h1>Our goal</h1>
+                <h2>Effecient and Precise Detections</h2>
+                <p>Providing great improvements to incident reporting</p>
+                <p>Data processing and collection continually increases effeciency</p>
+                <button class="main_btn"><a href="/assets/minihmtl/a_information.html">LEARN MORE</a></button>
+              </div>
+            </div>
+          </div>
+
+
+        <!--    Tools/Services Section   -->
+        <div class="services" id="tools">
+            <h1>Tools and Info</h1>
+            <div class="services_wrapper">
+
+              <div class="services_card">
+                <h2>Traffic Re-simmulator</h2>
+                <p>AI Powered traffic playback</p>
+                <div class="services_btn">
+                    <button onclick="document.location='assets/minihmtl/resim.html'">Get Started</button>
+                </div>
+              </div>
+
+              <div class="services_card">
+                <h2>Lane Segmentation</h2>
+                <p>Explore breakdowns of road segements for in-depth statistics</p>
+                <div class="services_btn">
+                    <button onclick="document.location='assets/minihmtl/segmentselector.html'">Get Started</button>
+                </div>
+              </div>
+
+              <div class="services_card">
+                <h2>Research Docs</h2>
+                <p>Explore Carom's Reseach Ventures</p>
+                <div class="services_btn"><button>Coming Soon</button></div>
+              </div>
+
+              <div class="services_card">
+                <h2>Future Expansions</h2>
+                <p>*add completed graphic code here*</p>
+                <div class="services_btn"><button>Coming Soon</button></div>
+              </div>
+
+            </div>
+          </div>
+
+
+        <!--    Feature Section    -->
+        <div class="main" id="sign-up">
+            <div class="main_container">
+            <div class="main_content">
+                <h1>Carom Media</h1>
+                <h2>Sign Up For News and Updates</h2>
+                <p>Statistics, research findings, coming soon features and more</p>
+                <button class="main_btn"><a href="#">Coming Soon</a></button>
+            </div>
+            <div class="main_img--container">
+                <div class="main_img--card" id="card-2">
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+        <!-- Footer Section -->
+        <div class="footer_container">
+            <div class="footer_links">
+                <div class="footer_link--wrapper">
+                    <div class="footer_link--items">
+                    <h2>About Us</h2>
+                    </div>
+                </div>
+                <div class="footer_logo">
+                    <a href="/" id="footer_logo">Carom Air</a>    
+                </div>
+                <div class="social_icons">
+                    <a href="/" class="social_icon--link" target="_blank" 
+                        ><i class="fab fa-github"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
