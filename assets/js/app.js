@@ -23,28 +23,6 @@ const hide_mobile_menu = () => {
 menu_links.addEventListener('click', hide_mobile_menu);
 nav_logo.addEventListener('click', hide_mobile_menu);
 
-/*
-
-const slider = document.querySelector('#slider-menu');
-//const slider_link = document.querySelector('.selection_card');
-const slider_link_1 = document.querySelector('.selection_card');
-const slider_link_2 = document.querySelector('.selection_card:nth-child(2)');
-const slider_link_3 = document.querySelector('.selection_card:nth-child(3)');
-const slider_link_4 = document.querySelector('.selection_card:nth-child(4)');
-
-
-// display the slide menu
-const slide_menu = () => {
-    slider.classList.toggle('is-active');
-    slider_link_1.classList.toggle('active');
-    slider_link_2.classList.toggle('active');
-    slider_link_3.classList.toggle('active');
-    slider_link_4.classList.toggle('active');
-};
-
-slider.addEventListener('click', slide_menu);
-
-*/
 
 // active menu logic for scroll
 const highlight_menu = () => {

@@ -1,11 +1,16 @@
 
+9/13/2022
+feature updates to resim viewer and subpage
+fixed title issue;
+
+9/12/2022
+uploading to git for site deployment
+pending changes
+
+
 9/11/2022
 refactoring the code to prepare for github upload tonight
 minor bug fixes and UI changes
 
 - todo: refactor the code and again to simplify before the website gets too complex
 
-
-9/12/2022
-uploading to git for site deployment
-pending changes
