@@ -37,8 +37,11 @@ let frame_tracker = 0;
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
-const canvas_width = canvas.width = window.innerWidth;
-const canvas_height = canvas.height = (window.innerHeight-100);
+const container_dim = document.querySelector('.ctx_container');
+let cont_width = container_dim.offsetWidth;
+let cont_height = container_dim.offsetHeight;
+const canvas_width = canvas.width = cont_width;
+const canvas_height = canvas.height = (cont_height);
 
 
 async function getData() {

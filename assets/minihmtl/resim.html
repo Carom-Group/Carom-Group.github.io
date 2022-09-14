@@ -42,17 +42,19 @@
 
     <div class="biggest_container">
 
-        <div class="header"></div>
+
         <div class="resim_viewer">
-            <div class="ctx_container">
-                <canvas></canvas>
+            <div class="container_wrapper">
+                <div class="ctx_container">
+                    <canvas></canvas>
+                    
+                    <!--   DaTa must be loaded after ctx to prevent error and mem overusuage -->
+                    <script type="text/javascript" src ="/assets/js/logic.js"></script>
+                    <script type="text/javascript" src = "/assets/js/resim.js"></script>
+    
+
+                </div>
             </div>
-    
-            <!--   DaTa must be loaded after ctx to prevent error and mem overusuage -->
-    
-            <script type="text/javascript" src ="/assets/js/logic.js"></script>
-            <script type="text/javascript" src = "/assets/js/resim.js"></script>
-    
             <div class="form_container">
                 <form>
                     <p>Click the buttons below to handle re-simmulation. You may click the play button multiple times in order to increase playback speed.</p>
@@ -61,6 +63,7 @@
                     <p>You can open the browser console for addtional information about the scene</p>
                 </form>  
             </div>
+
         </div>
     
     
