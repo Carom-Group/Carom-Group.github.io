@@ -389,6 +389,7 @@ scroll-behavior: smooth;
     justify-content: center;
     color: #fff;
     background-color: #ff1ead;
+    background: linear-gradient(to left, #00dbde 0%, #fc00ff 50%, #00dbde 100%);
     position: relative;
   }
 
@@ -518,9 +519,14 @@ scroll-behavior: smooth;
         font-size: 3rem;
     }
 
-    .main_content p {
+    .main_content h3 {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+
+    .main_content p {
+        margin-top: 2rem;
+        font-size: 12px;
     }
 }
 
