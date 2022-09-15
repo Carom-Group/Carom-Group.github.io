@@ -57,10 +57,12 @@
             </div>
         </div>
         <div class="form_container">
-            <form>
+            <form id="playback_toggle">
                 <p>Click the buttons below to handle re-simmulation. You may click the play button multiple times in order to increase playback speed.</p>
-                <input type = "button" value = "Start/Resume" onclick = "renderFrame();" />
-                <input type = "button" value = "Stop" onclick = "stop();" />
+                <input class="resim_btn" type = "button" value = "Start/Resume" onclick = "renderFrame();" />
+                <input class="resim_btn" type = "button" value = "Stop" onclick = "stop();" />
+                <input class="resim_btn" type = "button" value = "Speed Up" onclick = "renderFrame();" />
+                <input class="resim_btn" type = "button" value = "Slow Down" onclick = "stop();" />
                 <p>You can open the browser console for addtional information about the scene</p>
             </form>  
         </div>

@@ -292,6 +292,22 @@
             border-color: #187bfc;
             border-style: solid;
             background-color: #fff;
+            align-items: center;
+        }
 
+        .resim_btn {
+            background-color: #187bfc;
+            border: none;
+            color: #fff;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
 
+        .form_container p {
+            margin-top: .5rem;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 2rem;
         }

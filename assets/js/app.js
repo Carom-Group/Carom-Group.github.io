@@ -99,3 +99,26 @@ const slide_menu = () => {
 };
 
 slider.addEventListener('click', slide_menu);
+
+//not working yet
+const toggle_menu = document.querySelector('#playback_toggle');
+const play_btn = document.querySelector('.resim_btn');
+const inc = document.querySelector('.resim_btn_inc');
+const dec = document.querySelector('.resim_btn_dec');
+const play = () => {
+    resim_btn.classList.toggle('is-active');
+    inc.classList.toggle('active');
+    inc.classList.toggle('active');
+    play_btn.disabled = true;
+};
+
+
+toggle_menu.addEventListener('click', play);
+
+const hide_play_menu = () => {
+    const menu_bars = document.querySelector('.is-active');
+    if(window.innerWidth <= 768 && menu_bars) {
+        menu.classList.toggle('is-active');
+        menu_links.classList.remove('active');
+    }
+}
