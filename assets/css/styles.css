@@ -531,7 +531,8 @@ scroll-behavior: smooth;
 
     .main_content li {
         margin-top: .5rem;
-        font-size: 1.5rem;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 
@@ -691,27 +692,31 @@ scroll-behavior: smooth;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #c0c0aa 100%);
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00dbde 0%, #fc00ff 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00dbde 0%, #fc00ff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: slideMenu_R .9s ease-in;
   }
   
   .services_card.active:nth-child(2){
-      background: #c0c0aa;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #ff00cc;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #00dbde 0%, #fc00ff 100%);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       animation: slideMenu_R .7s ease-in;
   }
   
   .services_card.active:nth-child(3){
-      background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+      background: #ff00cc;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #00dbde 0%, #fc00ff 100%);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #00dbde 0%, #fc00ff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       transition: ease-in;
       animation: slideMenu_L .7s ease-in;
   }
   
   .services_card.active:nth-child(4){
       background: #ff00cc;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: -webkit-linear-gradient(to right, #00dbde 0%, #fc00ff 100%);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       animation: slideMenu_L .9s ease-in;
   }
 
@@ -742,7 +747,22 @@ scroll-behavior: smooth;
     .services_wrapper {
         grid-template-columns: 1fr 1fr;
     }
-}
+    .services_card.active {
+        width: 325px;
+        animation: slideMenu_R .9s ease-in;
+    }
+    .services_card.active:nth-child(2) {
+        width: 325px;
+        animation: slideMenu_R .7s ease-in;
+    }
+    .services_card.active:nth-child(3) {
+        width: 325px;
+        animation: slideMenu_R .7s ease-in;
+    }
+    .services_card.active:nth-child(4) {
+        width: 325px;
+        animation: slideMenu_R .9s ease-in;
+    }
 
 @media screen and (max-width: 768px) {
     .services_wrapper {
@@ -771,3 +791,4 @@ scroll-behavior: smooth;
         translate: 0px;
     }
   }
+}
