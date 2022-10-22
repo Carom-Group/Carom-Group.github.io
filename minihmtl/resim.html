@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleDrawing Carom</title>
+    <link rel="stylesheet" href="/resim.css">
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script type="application/json" src="/assets/data/A/A2_0_simple_lmap_data.csv"></script>
+<script type="application/json" src="/assets/data/A/A2_0_simple_lmap_data_FULL(1).json"></script>
+
+<body>
+    <!--    Navbar     -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">CAROM</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/tech.html" class="navbar_links">Tech</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/about.html" class="navbar_links">About</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/" class="button">View Demos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="biggest_container">
+
+
+        <div class="resim_viewer">
+            <div class="container_wrapper">
+                <div class="ctx_container">
+                    <canvas></canvas>
+                    
+                    <!--   DaTa must be loaded after ctx to prevent error and mem overusuage -->
+                    <script type="text/javascript" src ="/js/logic.js"></script>
+                    <script type="text/javascript" src = "/js/resim.js"></script>
+    
+
+                </div>
+            </div>
+        </div>
+        <div class="form_container">
+            <form id="playback_toggle">
+                <p>Click the buttons below to handle re-simmulation. You may click the play button multiple times in order to increase playback speed.</p>
+                <input class="resim_btn" type = "button" value = "Start/Resume" onclick = "renderFrame();" />
+                <input class="resim_btn" type = "button" value = "Stop" onclick = "stop();" />
+                <input class="resim_btn" type = "button" value = "Speed Up" onclick = "renderFrame();" />
+                <input class="resim_btn" type = "button" value = "Slow Down" onclick = "stop();" />
+                <p>You can open the browser console for addtional information about the scene</p>
+            </form>  
+        </div>
+    
+    
+        <div id="content"></div>
+    
+
+    
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link--wrapper">
+                <div class="footer_link--items">
+                <h2>About Us</h2>
+                </div>
+            </div>
+            <div class="footer_logo">
+                <a href="/" id="footer_logo">Carom Air</a>    
+            </div>
+            <div class="social_icons">
+                <a href="/" class="social_icon--link" target="_blank" 
+                    ><i class="fab fa-github"></i
+                ></a>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

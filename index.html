@@ -4,154 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAROM Air</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>CAROM Website</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/1bf875bbb8.js" crossorigin="anonymous"></script>
+
 </head>
-    <body>
-        <!-- Navbar Section -->
-        <nav class="navbar">
-            <div class="navbar_container">
-                <a href="#home" id="navbar_logo">CAROM AIR</a>
-                <div class="navbar_toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="#home" class="navbar_links" id="home-page">Home</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="#about" class="navbar_links" id="about-page">Ambitions</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="#tools" class="navbar_links" id="tools-page">Tools</a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="assets/minihmtl/segmentselector.html" class="button" id="signup">Segment Demo</a>
-                    </li>
-                </ul>
+<!-- primary class names noted by one or zero '_' and sub uses two '_'-->
+<body>
+    <!--    Navbar     -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">CAROM</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-
-        <!--      Grabber Visuals     -->
-        <div class="iscroller"></div>
-
-
-        <!--    Main Title Section   -->
-        <div class="hero" id="home">
-            <div class="hero_container">
-                <h1 class="hero_heading">Intelligent traffic monitoring using <span>Neural Networks.</span></h1>
-
-                <p class="hero_description">Advanced analysis and incident detection</p>
-                <button class="main_btn"><a href="#">Explore</a></button>
-            </div>
-        </div>
-
-        <!--    About Section   -->
-        <div class="main" id="about">
-            <div class="main_container">
-              <div class="main_img--container">
-
-                <div class="main_img--card">
-
-                    <div class="main_img--back ">
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
-
-                    <div class="main_img--fore">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    
-                </div>
-              </div>
-              <div class="main_content">
-                <h1>Our goal</h1>
-                <h2>Effecient and Precise Detections</h2>
-                <p>Providing great improvements to incident reporting and various other fields.</p>
-                <p>Opens the door for ambitous downstream applications.</p>
-                <button class="main_btn"><a href="/assets/minihmtl/a_information.html">LEARN MORE</a></button>
-              </div>
-            </div>
-          </div>
-
-
-        <!--    Tools/Services Section   -->
-        <div class="services" id="tools">
-            <h1>Tools and Info</h1>
-            <div class="services_wrapper">
-
-              <div class="services_card">
-                <h2>Traffic Re-simmulator</h2>
-                <p>AI Powered traffic playback</p>
-                <div class="services_btn">
-                    <button onclick="document.location='assets/minihmtl/resim.html'">Get Started</button>
-                </div>
-              </div>
-
-              <div class="services_card">
-                <h2>Lane Segmentation</h2>
-                <p>Explore breakdowns of road segements for in-depth statistics</p>
-                <div class="services_btn">
-                    <button onclick="document.location='assets/minihmtl/segmentselector.html'">Get Started</button>
-                </div>
-              </div>
-
-              <div class="services_card">
-                <h2>Research Docs</h2>
-                <p>Learn about the CAROM Framework</p>
-                <div class="services_btn"><button>Coming Soon</button></div>
-              </div>
-
-              <div class="services_card">
-                <h2>Future Expansions</h2>
-                <p>*add completed graphic code here*</p>
-                <div class="services_btn"><button>Coming Soon</button></div>
-              </div>
-
-            </div>
-          </div>
-
-
-        <!--    Feature Section    -->
-        <div class="main" id="sign-up">
-            <div class="main_container">
-            <div class="main_content">
-                <h1>CAROM Air Dataset</h1>
-                <h2>Precise Detections and Trajectories</h2>
-                <p>Statistics, research findings, coming soon features and more</p>
-                <h3>Our framework produces vehicle localization between 0.1 and 0.3m of accruacy from flight recordings 120m above the scene.</h3>
-                <h3>Our dataset allows for fine-grained traffic counting, road saftely analysis, incident detection, measurements and lableing, and generalizations.</h3>
-                <li>Core features of the CAROM Air Dataset
-                    <li>over 100 hours of ariel footage</li>
-                    <li>Scene variation (40 scenes to date)</li>
-                    <li>Vehicle type distincion for all common road vehicles</li>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">Home</a>
                 </li>
-                <button class="main_btn"><a href="#">Coming Soon</a></button>
+                <li class="navbar_item">
+                    <a href="/tech.html" class="navbar_links">Tech</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/about.html" class="navbar_links">About</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/tech.html" class="button">View Demos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Title Page w IMG -->
+    <div class="video_wrapper">
+        <video autoplay muted loop id="main_vid" src="/data/images/B3_0_debug_Trim.mp4" type="video/mp4"></video>
+    </div>
+
+
+    <div class="fancy">
+        <div class="fancy_content">
+            <h1>Carom Air</h1>
+            <p>Neural Nerwork Power</p>
+            <a href="/" class="hero_button">Learn More</a>
+        </div>
+    </div>
+
+
+    <!-- Info Section -->
+    <div class="info">
+        <div class="info_container">
+            <div class="dataset_info">
+                <p class="info__category">Features</p>
+                <h1 class="info__heading">About the data set</h1>
+
+                <div class="dataset__features">
+                    <p class="info_feature">
+                        <i class="fa-regular fa-circle-check"></i> vast data
+                    </p>
+                    <p class="info_feature">
+                        <i class="fa-regular fa-circle-check"></i> hours of footage
+                    </p>
+                    <p class="info_feature">
+                        <i class="fa-regular fa-circle-check"></i> vehicle variety
+                    </p>
+                    <p class="info_feature">
+                        <i class="fa-regular fa-circle-check"></i> versatile applications
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./data/images/coral_3.jpg" alt="street" class="dataset__img"></img>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tool List Selection -->
+    <div class="tools">
+        <h1>View Our Tools</h1>
+        <p class="tools_desc"> We created the dataset with usability in mind to enable countless amounts of 
+            downstream applications based off of our tracking data.</p>
+
+        <div class="tools_wrapper">
+            <div class="tools_card">
+                <div class="tools_title">
+                    <i class=""></i>
+                    <h3> Downstream Applications </h3>
+                </div>
+                <div class="tools_benefits">
+                    <p> Here's what you can do with our data </p>
+                    <p> Many possibilities </p>
+                    <p> Useful insights and statistics </p>
+                </div>
+                <a href="/" class="button">Coming Soon</a>
             </div>
 
+            <div class="tools_card">
+                <div class="tools_title">
+                    <i class=""></i>
+                    <h3> Scene Re-simmulation Tool </h3>
+                </div>
+                <div class="tools_benefits">
+                    <p> Replay various traffic scenes </p>
+                    <p> Visualize the data recordings </p>
+                    <p> Statistics gathering</p>
+                </div>
+                <a href="/minihmtl/resim.html" class="button">Learn More</a>
+            </div>
+
+            <div class="tools_card">
+                <div class="tools_title">
+                    <i class=""></i>
+                    <h3> Segmentation Analytics </h3>
+                </div>
+                <div class="tools_benefits">
+                    <p> Lane Segmentation Tool </p>
+                    <p> Useful for traffic analytics </p>
+                    <p> Calculate traffic patterns and other observations </p>
+                </div>
+                <a href="/minihmtl/segmentselector.html" class="button">Learn More</a>
             </div>
         </div>
-  
-        <!-- Footer Section -->
-        <div class="footer_container">
-            <div class="footer_links">
-                <div class="footer_link--wrapper">
-                    <div class="footer_link--items">
+    </div>
+
+
+    <!-- Details Section -->
+    <div class="details">
+        <div class="details_wrapper">
+            <div class="details_text">
+                <p class="title">Expansive Data</p>
+                <h1>Collected with Usability in Mind</h1>
+                <p class="detail_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vitae nemo, id nam fuga voluptatum illo libero quaerat architecto hic molestias perspiciatis ab exercitationem cumque dolorem eum eaque a fugit.
+                </p>
+            </div>
+            <div class="details_text">
+                <p class="title">Endless Possibilities</p>
+                <h1>Enabling Downstream Applications</h1>
+                <p class="detail_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vitae nemo, id nam fuga voluptatum illo libero quaerat architecto hic molestias perspiciatis ab exercitationem cumque dolorem eum eaque a fugit.
+                </p>
+            </div>
+            
+            <div class="details_card">
+                <div class="card_overlay_container">
+                    <img src="./data/images/coral_1.jpg" alt="background" class="details_img"></img>
+                    <div class="card_overlay"></div>
+                    <p>Published Paper Coming Soon</p>
+                </div>
+            </div>
+            <div class="details_card">
+                <div class="card_overlay_container">
+                    <img src="./data/images/coral_3.jpg" alt="background" class="details_img"></img>
+                    <div class="card_overlay"></div>
+                    <p>Coming Soon!</p>
+                </div>
+            </div>
+            <div class="details_card">
+                <div class="card_overlay_container">
+                    <img src="./data/images/coral_2.jpg" alt="background" class="details_img"></img>
+                    <div class="card_overlay"></div>
+                    <p>Coming Soon!</p>
+                </div>
+            </div>
+        <!-- Read the Paper -->
+            <div class="details_card">
+                <div class="card_overlay_container">
+                    <img src="./data/images/coral_1.jpg" alt="background" class="details_img"></img>
+                    <div class="card_overlay"></div>
+                    <p>Coming Soon!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Citations -->
+
+    <!-- Footer Section -->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link--wrapper">
+                <div class="footer_link--items">
                     <h2>About Us</h2>
-                    </div>
-                </div>
-                <div class="footer_logo">
-                    <a href="/" id="footer_logo">Carom Air</a>    
-                </div>
-                <div class="social_icons">
-                    <a href="/" class="social_icon--link" target="_blank" 
-                        ><i class="fab fa-github"></i
-                    ></a>
                 </div>
             </div>
+            <div class="footer_logo">
+                <a href="/" id="footer_logo">Carom Air</a>    
+            </div>
+            <div class="social_icons">
+                <a href="https://github.com/duolu/CAROM" class="social_icon--link" target="_blank" 
+                    ><i class="fab fa-github"></i
+                ></a>
+            </div>
         </div>
-        <script src="assets/js/app.js"></script>
-    </body>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
