@@ -209,7 +209,10 @@
 
 /* main background visuals */
 .video_wrapper {
-    
+    max-width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
 
 #main_vid {
@@ -243,7 +246,7 @@
     font-size: clamp(3rem, 8vw, 7rem);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-}
+}   
 
 .fancy_content p {
     font-size: clamp(1rem, 4vw, 2.5rem);
@@ -314,8 +317,8 @@
         left: 0;
         bottom: 0;
         z-index: -1;
-        min-width: 70vw;
-        min-height: 70vh;
+        max-width: 65vw;
+        max-height: 50vh;
         object-fit: cover;
     }
 }
@@ -553,7 +556,7 @@
 
 
 .fancy_about {
-    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)) ,url('./data/images/test.gif');
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)) ,url('./data/images/carom_main_gif.gif');
     height: 70vh;
     background-attachment: fixed;
     background-position: center;
@@ -588,8 +591,8 @@
 }
 
 .about_wrapper {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .about_wrapper h1 {
