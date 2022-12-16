@@ -357,7 +357,7 @@
 }
 
 .tools p {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: clamp(1rem, 3vw, 1.5rem);
     text-align: center;
     padding-left: 5%;
@@ -365,7 +365,7 @@
 }
 
 .tools_desc {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
